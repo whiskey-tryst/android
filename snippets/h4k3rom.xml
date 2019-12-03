@@ -17,10 +17,9 @@
 <project path="vendor/h4k3rom" name="H4K3ROM/android_vendor_h4k3rom" remote="H4K3ROM" />
 
     <!-- H4K3ROM OnePlus3T Repos -->  
-<project path="device/oneplus/oneplus3" name="H4K3ROM/android_device_oneplus_oneplus3" remote="H4K3ROM" />  
-<project path="kernel/oneplus/msm8996" name="H4K3ROM/android_kernel_oneplus_msm8996" remote="H4K3ROM" />
-<project path="device/oppo/common" name="H4K3ROM/android_device_oppo_common" remote="H4K3ROM" />
-<project path="vendor/oneplus" name="H4K3ROM/proprietary_vendor_oneplus" remote="H4K3ROM" />
+<project path="device/google/crosshatch" name="H4K3ROM/android_device_google_crosshatch" remote="H4K3ROM" />  
+<project path="kernel/google/crosshatch" name="H4K3ROM/android_kernel_google_crosshatch" remote="H4K3ROM" />
+<project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="H4K3ROM" />
 
                                                                                        
 </manifest>
