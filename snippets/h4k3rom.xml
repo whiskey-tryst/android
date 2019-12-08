@@ -18,7 +18,7 @@
 
     <!-- H4K3ROM OnePlus3T Repos -->  
 <project path="device/google/bonito" name="H4K3ROM/android_device_google_bonito" remote="H4K3ROM" />  
-<project path="kernel/google/bonito" name="H4K3ROM/android_kernel_google_bonito" remote="H4K3ROM" />
+<project path="kernel/google/msm-4.9" name="H4K3ROM/android_kernel_google_msm-4.9" remote="H4K3ROM" />
 <project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="H4K3ROM" />
 
                                                                                        
