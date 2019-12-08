@@ -17,8 +17,8 @@
 <project path="vendor/h4k3rom" name="H4K3ROM/android_vendor_h4k3rom" remote="H4K3ROM" />
 
     <!-- H4K3ROM OnePlus3T Repos -->  
-<project path="device/google/crosshatch" name="H4K3ROM/android_device_google_crosshatch" remote="H4K3ROM" />  
-<project path="kernel/google/crosshatch" name="H4K3ROM/android_kernel_google_crosshatch" remote="H4K3ROM" />
+<project path="device/google/bonito" name="H4K3ROM/android_device_google_bonito" remote="H4K3ROM" />  
+<project path="kernel/google/bonito" name="H4K3ROM/android_kernel_google_bonito" remote="H4K3ROM" />
 <project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="H4K3ROM" />
 
                                                                                        
