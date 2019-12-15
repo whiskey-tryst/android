@@ -23,7 +23,7 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build/make" name="LineageOS/android_build" groups="pdk" >
+  <project path="build/make" name="H4k3romOS/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -32,19 +32,19 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/blueprint" name="LineageOS/android_build_blueprint" groups="pdk,tradefed" />
+  <project path="build/blueprint" name="H4k3romOS/android_build_blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" remote="aosp" />
-  <project path="build/soong" name="LineageOS/android_build_soong" groups="pdk,tradefed" >
+  <project path="build/soong" name="H4k3romOS/android_build_soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="art" name="LineageOS/android_art" groups="pdk" />
-  <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
+  <project path="art" name="H4k3romOS/android_art" groups="pdk" />
+  <project path="bionic" name="H4k3romOS/android_bionic" groups="pdk" />
+  <project path="bootable/recovery" name="H4k3romOS/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="developers/build" name="platform/developers/build" groups="developers,pdk" remote="aosp" />
-  <project path="development" name="LineageOS/android_development" groups="developers,pdk-cw-fs,pdk-fs" />
+  <project path="development" name="H4k3romOS/android_development" groups="developers,pdk-cw-fs,pdk-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk" remote="aosp" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" remote="aosp" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" remote="aosp" />
