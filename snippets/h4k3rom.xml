@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="h4k3rom"
+           fetch="https://github.com/"
+           revision="refs/heads/lineage-17.0" />
+  
+  <!-- h4k3rom Apps -->
+
+<project path="packages/apps/H4K3RWalls" name="h4k3rom/H4K3RWalls" remote="h4k3rom" />
+<project path="packages/apps/H4K3RWebb" name="h4k3rom/H4K3RWebb" remote="h4k3rom" />
+
+    <!-- h4k3rom OnePlus3T Repos -->  
+<project path="device/google/bonito" name="h4k3rom/android_device_google_bonito" remote="h4k3rom" />  
+<project path="kernel/google/msm-4.9" name="h4k3rom/android_kernel_google_msm-4.9" remote="h4k3rom" />
+<project path="vendor/google" name="h4k3rom/proprietary_vendor_google" remote="h4k3rom" />
+
+  <!-- General -->
+  <project path="art" name="android_art" remote="h4k3rom" />
+  <project path="bionic" name="android_bionic" remote="h4k3rom" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="h4k3rom" />
+  <project path="development" name="android_development" remote="h4k3rom" />
+  <project path="platform_testing" name="android_platform_testing" remote="h4k3rom" />
+
+  <!-- Build -->
+  <project path="build/blueprint" name="android_build_blueprint" remote="h4k3rom" />
+  <project path="build/make" name="android_build" remote="h4k3rom">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="h4k3rom">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/h4k3rom/sepolicy" name="android_device_h4k3rom_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="h4k3rom" revision="ten-legacy-um" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="h4k3rom" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="h4k3rom" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="h4k3rom" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="h4k3rom" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="h4k3rom" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="h4k3rom" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="h4k3rom" />
+
+  <!-- Hardware -->
+  <project path="hardware/h4k3rom/interfaces" name="android_hardware_h4k3rom_interfaces" remote="h4k3rom" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="h4k3rom" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="h4k3rom" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="h4k3rom" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="h4k3rom" />
+  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="h4k3rom" />
+  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="h4k3rom" />
+  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="h4k3rom" />
+  <project path="packages/apps/ConfigCenter" name="android_packages_apps_ConfigCenter" remote="h4k3rom" />
+  <project path="packages/apps/CustomDoze" name="android_packages_apps_CustomDoze" remote="h4k3rom" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="h4k3rom" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="h4k3rom" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="h4k3rom" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="h4k3rom" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="h4k3rom" />
+  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="h4k3rom" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="h4k3rom" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="h4k3rom" />
+  <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="h4k3rom" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="h4k3rom" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="h4k3rom" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="h4k3rom" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="h4k3rom" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="h4k3rom" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="h4k3rom" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="h4k3rom" />
+
+  <!-- System -->
+  <project path="system/bpf" name="android_system_bpf" remote="h4k3rom" />
+  <project path="system/bt" name="android_system_bt" remote="h4k3rom" />
+  <project path="system/core" name="android_system_core" remote="h4k3rom" />
+  <project path="system/extras" name="android_system_extras" remote="h4k3rom" />
+  <project path="system/netd" name="android_system_netd" remote="h4k3rom" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="h4k3rom" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="h4k3rom" />
+  <project path="system/vold" name="android_system_vold" remote="h4k3rom" />
+
+  <!-- Vendor -->
+  <project path="vendor/h4k3rom" name="android_vendor_h4k3rom" remote="h4k3rom" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="h4k3rom" />
+  <project path="vendor/support" name="android_vendor_support" remote="h4k3rom" />
+
+</manifest>
