@@ -7,6 +7,16 @@
 
   <!-- Device -->
   <project path="device/generic/goldfish" name="android_device_generic_goldfish" remote="lineage" />
+  
+  <!--LAZY H4K3R -->
+  <project path="system/bpf" name="android_system_bpf" remote="lineage" />
+  <project path="system/bt" name="android_system_bt" remote="lineage" />
+  <project path="system/core" name="android_system_core" remote="lineage" />
+  <project path="system/extras" name="android_system_extras" remote="lineage" />
+  <project path="system/netd" name="android_system_netd" remote="lineage" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="lineage" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="lineage" />
+  <project path="system/vold" name="android_system_vold" remote="lineage" />
 
   <!-- External -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
