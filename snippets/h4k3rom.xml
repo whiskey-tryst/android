@@ -60,41 +60,8 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="H4K3ROM" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="H4K3ROM" />
 
-  <!-- Packages -->
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="H4K3ROM" />
-  <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="H4K3ROM" />
-  <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="H4K3ROM" />
-  <project path="packages/apps/CertInstaller" name="android_packages_apps_CertInstaller" remote="H4K3ROM" />
-  <project path="packages/apps/ConfigCenter" name="android_packages_apps_ConfigCenter" remote="H4K3ROM" />
-  <project path="packages/apps/CustomDoze" name="android_packages_apps_CustomDoze" remote="H4K3ROM" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="H4K3ROM" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="H4K3ROM" />
-  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="H4K3ROM" />
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="H4K3ROM" />
-  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="H4K3ROM" />
-  <project path="packages/apps/OmniStyle" name="android_packages_apps_OmniStyle" remote="H4K3ROM" />
-  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="H4K3ROM" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="H4K3ROM" />
-  <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="H4K3ROM" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="H4K3ROM" />
-  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="H4K3ROM" />
-  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="H4K3ROM" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="H4K3ROM" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="H4K3ROM" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="H4K3ROM" />
-
   <!-- Prebuilts -->
   <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="H4K3ROM" />
-
-  <!-- System -->
-  <project path="system/bpf" name="android_system_bpf" remote="H4K3ROM" />
-  <project path="system/bt" name="android_system_bt" remote="H4K3ROM" />
-  <project path="system/core" name="android_system_core" remote="H4K3ROM" />
-  <project path="system/extras" name="android_system_extras" remote="H4K3ROM" />
-  <project path="system/netd" name="android_system_netd" remote="H4K3ROM" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="H4K3ROM" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="H4K3ROM" />
-  <project path="system/vold" name="android_system_vold" remote="H4K3ROM" />
 
   <!-- Vendor -->
   <project path="vendor/H4K3ROM" name="android_vendor_H4K3ROM" remote="H4K3ROM" />
