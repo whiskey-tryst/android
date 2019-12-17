@@ -10,10 +10,14 @@
 <project path="packages/apps/H4K3RWalls" name="H4K3ROM/H4K3RWalls" remote="H4K3ROM" />
 <project path="packages/apps/H4K3RWebb" name="H4K3ROM/H4K3RWebb" remote="H4K3ROM" />
 
-    <!-- H4K3ROM OnePlus3T Repos -->  
+    <!-- H4K3ROM Bonito Repos -->  
 <project path="device/google/bonito" name="H4K3ROM/android_device_google_bonito" remote="H4K3ROM" />  
 <project path="kernel/google/msm-4.9" name="H4K3ROM/android_kernel_google_msm-4.9" remote="H4K3ROM" />
 <project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="H4K3ROM" />
+  
+      <!-- H4K3ROM Flounder testing Repos -->  
+<project path="device/htc/flounder" name="H4K3ROM/android_device_htc_flounder" remote="H4K3ROM" />  
+<project path="kernel/htc/flounder" name="H4K3ROM/android_kernel_htc_flounder" remote="H4K3ROM" />
 
   <!-- General -->
   <project path="art" name="android_art" remote="H4K3ROM" />
