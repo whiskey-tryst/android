@@ -64,9 +64,6 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="H4K3ROM" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="H4K3ROM" />
 
-  <!-- Prebuilts -->
-  <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="H4K3ROM" />
-
   <!-- Vendor -->
   <project path="vendor/H4K3ROM" name="android_vendor_H4K3ROM" remote="H4K3ROM" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="H4K3ROM" />
