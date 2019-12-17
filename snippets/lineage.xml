@@ -18,12 +18,6 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="lineage" />
   <project path="system/vold" name="android_system_vold" remote="lineage" />
   
-    <!-- General -->
-  <project path="bionic" name="android_bionic" remote="lineage" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="lineage" />
-  <project path="development" name="android_development" remote="lineage" />
-  <project path="platform_testing" name="android_platform_testing" remote="lineage" />
-
   <!-- External -->
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" />
