@@ -22,9 +22,6 @@
   <project path="frameworks/base" name="h4k3rom/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
   <project path="frameworks/native" name="h4k3rom/frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
   <project path="hardware/interfaces" name="h4k3rom/hardware_interfaces" groups="pdk" remote="h4k3rom" />
-  <project path="packages/apps/DeskClock" name="h4k3rom/packages_apps_DeskClock" groups="pdk-fs" remote="h4k3rom" />
-  <project path="packages/apps/Dialer" name="h4k3rom/packages_apps_Dialer" groups="pdk-fs" remote="h4k3rom" />
-  <project path="packages/apps/Launcher3" name="h4k3rom/packages_apps_Launcher3" groups="pdk-fs" remote="h4k3rom" />
   <project path="packages/apps/Settings" name="h4k3rom/packages_apps_Settings" groups="pdk-fs" remote="h4k3rom" />
   <project path="packages/apps/Updater" name="h4k3rom/packages_apps_Updater" groups="pdk-fs" remote="h4k3rom" />
   <project path="packages/providers/DownloadProvider" name="h4k3rom/packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
@@ -35,6 +32,56 @@
   <project path="system/netd" name="h4k3rom/system_netd" groups="pdk" remote="h4k3rom" />
   <project path="system/vold" name="h4k3rom/system_vold" groups="pdk" remote="h4k3rom" />
   <project path="system/update_engine" name="h4k3rom/system_update_engine" groups="pdk" remote="h4k3rom" />
+  
+    <!-- General -->
+  <project path="art" name="android_art" remote="h4k3rom" />
+  <project path="bionic" name="android_bionic" remote="h4k3rom" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="h4k3rom" />
+  <project path="development" name="android_development" remote="h4k3rom" />
+  <project path="platform_testing" name="android_platform_testing" remote="h4k3rom" />
+
+  <!-- Build -->
+  <project path="build/blueprint" name="android_build_blueprint" remote="h4k3rom" />
+  <project path="build/make" name="android_build" remote="h4k3rom">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="h4k3rom">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/H4K3ROM/sepolicy" name="android_device_H4K3ROM_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="h4k3rom" revision="ten-legacy-um" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="h4k3rom" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="h4k3rom" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="h4k3rom" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="h4k3rom" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="h4k3rom" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="h4k3rom" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="h4k3rom" />
+
+  <!-- Hardware -->
+  <project path="hardware/H4K3ROM/interfaces" name="android_hardware_H4K3ROM_interfaces" remote="h4k3rom" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="h4k3rom" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="h4k3rom" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="h4k3rom" />
+
+  <!-- Vendor -->
+  <project path="vendor/H4K3ROM" name="android_vendor_H4K3ROM" remote="h4k3rom" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="h4k3rom" />
+  <project path="vendor/support" name="android_vendor_support" remote="h4k3rom" />
 
   <!-- LineageOS AOSP Repos -->
   <project path="art" name="LineageOS/android_art" groups="pdk" remote="lineage" />
