@@ -17,14 +17,14 @@
            sync-c="true"
            sync-j="8" />
   
+  <!-- Remove Packages -->
+  <include name="remove.xml" />
+  
   <!-- Include AOSP repos -->
   <include name="h4k3rom-aosp.xml" />
 
-  <!-- Remove Packages -->
-  <include name="remove.xml" />
-
   <!-- H3K3R Files -->
-  <project path="platform_manifest" name="H4K3ROM/platform_manifest" remote="h4k3rom" />
+  <project path="android" name="H4K3ROM/android" remote="h4k3rom" />
 
   <!-- Lineage additions -->
   <project path="external/bash" name="LineageOS/android_external_bash" remote="lineage" />
