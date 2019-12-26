@@ -16,6 +16,9 @@
            fetch="git://github.com/"
            sync-c="true"
            sync-j="8" />
+  
+  <!-- Include AOSP repos -->
+  <include name="h4k3rom-aosp.xml" />
 
   <!-- Remove Packages -->
   <include name="remove.xml" />
