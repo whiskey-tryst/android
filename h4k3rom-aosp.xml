@@ -17,10 +17,6 @@
     <linkfile src="root.bp" dest="Android.bp" />	
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="external/tinycompress" name="h4k3rom/external_tinycompress" groups="pdk" remote="h4k3rom" />
-  <project path="frameworks/av" name="h4k3rom/frameworks_av" groups="pdk" remote="h4k3rom" />
-  <project path="frameworks/base" name="h4k3rom/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
-  <project path="frameworks/native" name="h4k3rom/frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
   <project path="hardware/interfaces" name="h4k3rom/hardware_interfaces" groups="pdk" remote="h4k3rom" />
   <project path="packages/apps/Settings" name="h4k3rom/packages_apps_Settings" groups="pdk-fs" remote="h4k3rom" />
   <project path="packages/apps/Updater" name="h4k3rom/packages_apps_Updater" groups="pdk-fs" remote="h4k3rom" />
