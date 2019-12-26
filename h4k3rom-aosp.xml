@@ -17,7 +17,6 @@
     <linkfile src="root.bp" dest="Android.bp" />	
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="hardware/interfaces" name="h4k3rom/hardware_interfaces" groups="pdk" remote="h4k3rom" />
   <project path="packages/apps/Settings" name="h4k3rom/packages_apps_Settings" groups="pdk-fs" remote="h4k3rom" />
   <project path="packages/apps/Updater" name="h4k3rom/packages_apps_Updater" groups="pdk-fs" remote="h4k3rom" />
   <project path="packages/providers/DownloadProvider" name="h4k3rom/packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
