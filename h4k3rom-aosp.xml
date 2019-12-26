@@ -2,6 +2,20 @@
 <manifest>
 
   <!-- H4K3ROM AOSP Repos -->
+  <project path="bionic" name="h4k3rom/bionic" groups="pdk" remote="h4k3rom" />	
+  <project path="bootable/recovery" name="h4k3rom/bootable_recovery" groups="pdk" remote="h4k3rom" />	
+  <project path="build/make" name="h4k3rom/build" groups="pdk" remote="h4k3rom" >	
+    <copyfile src="core/root.mk" dest="Makefile" />	
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />	
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />	
+    <linkfile src="core" dest="build/core" />	
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />	
+    <linkfile src="target" dest="build/target" />	
+    <linkfile src="tools" dest="build/tools" />	
+  </project>	
+  <project path="build/soong" name="h4k3rom/build_soong" groups="pdk,tradefed" remote="h4k3rom" >	
+    <linkfile src="root.bp" dest="Android.bp" />	
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="external/tinycompress" name="h4k3rom/external_tinycompress" groups="pdk" remote="h4k3rom" />
   <project path="frameworks/av" name="h4k3rom/frameworks_av" groups="pdk" remote="h4k3rom" />
@@ -19,29 +33,6 @@
   <project path="system/vold" name="h4k3rom/system_vold" groups="pdk" remote="h4k3rom" />
   <project path="system/update_engine" name="h4k3rom/system_update_engine" groups="pdk" remote="h4k3rom" />
   
-    <!-- General -->
-  <project path="art" name="android_art" remote="h4k3rom" />
-  <project path="bionic" name="android_bionic" remote="h4k3rom" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="h4k3rom" />
-  <project path="development" name="android_development" remote="h4k3rom" />
-  <project path="platform_testing" name="android_platform_testing" remote="h4k3rom" />
-
-  <!-- Build -->
-  <project path="build/blueprint" name="android_build_blueprint" remote="h4k3rom" />
-  <project path="build/make" name="android_build" remote="h4k3rom">
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/soong" name="android_build_soong" remote="h4k3rom">
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-
   <!-- Device -->
   <project path="device/H4K3ROM/sepolicy" name="android_device_H4K3ROM_sepolicy" remote="h4k3rom" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="h4k3rom" />
