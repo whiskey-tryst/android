@@ -44,8 +44,6 @@
   <!-- Hardware -->
   <project path="hardware/H4K3ROM/interfaces" name="android_hardware_H4K3ROM_interfaces" remote="h4k3rom" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="h4k3rom" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="h4k3rom" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="h4k3rom" />
 
   <!-- Vendor -->
   <project path="vendor/H4K3ROM" name="android_vendor_H4K3ROM" remote="h4k3rom" />
