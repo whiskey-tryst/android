@@ -23,4 +23,4 @@ $ ccache -M 50G
 /// then do ///
 
 
-. vendor/h4k3rom/h4k3rom.sh && . build/envsetup.sh && LLVM_ENABLE_THREADS=2 && brunch oneplus3
+$ repo sync --force-sync && . build/envsetup.sh && LLVM_ENABLE_THREADS=2 && brunch bonito
