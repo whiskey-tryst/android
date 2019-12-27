@@ -48,7 +48,7 @@
   <!-- Vendor -->
   <project path="vendor/H4K3ROM" name="h4k3rom/android_vendor_H4K3ROM" remote="h4k3rom" />
   <project path="vendor/qcom/opensource/power" name="h4k3rom/android_vendor_qcom_opensource_power" remote="h4k3rom" />
-  <project path="vendor/support" name="h4k3rom/android_vendor_support" remote="h4k3rom" />
+  <!-- <project path="vendor/support" name="h4k3rom/android_vendor_support" remote="h4k3rom" /> -->
 
   <!-- LineageOS AOSP Repos -->
   <project path="art" name="LineageOS/android_art" groups="pdk" remote="lineage" />
