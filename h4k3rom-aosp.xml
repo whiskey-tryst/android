@@ -13,7 +13,7 @@
     <linkfile src="target" dest="build/target" />	
     <linkfile src="tools" dest="build/tools" />	
   </project>	
-  <project path="build/soong" name="h4k3rom/build_soong" groups="pdk,tradefed" remote="h4k3rom" >	
+  <project path="build/soong" name="h4k3rom/android_build_soong" groups="pdk,tradefed" remote="h4k3rom" >	
     <linkfile src="root.bp" dest="Android.bp" />	
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
