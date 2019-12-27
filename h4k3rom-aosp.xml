@@ -3,7 +3,7 @@
 
   <!-- H4K3ROM AOSP Repos -->
   <project path="bionic" name="h4k3rom/android_bionic" groups="pdk" remote="h4k3rom" />	
-  <project path="bootable/recovery" name="h4k3rom/bootable_recovery" groups="pdk" remote="h4k3rom" />	
+  <project path="bootable/recovery" name="h4k3rom/android_bootable_recovery" groups="pdk" remote="h4k3rom" />	
   <project path="build/make" name="h4k3rom/android_build" groups="pdk" remote="h4k3rom" >	
     <copyfile src="core/root.mk" dest="Makefile" />	
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />	
