@@ -31,7 +31,7 @@
   <!-- Device -->
   <project path="device/H4K3ROM/sepolicy" name="h4k3rom/android_device_H4K3ROM_sepolicy" remote="h4k3rom" />
   <project path="device/qcom/sepolicy" name="h4k3rom/android_device_qcom_sepolicy" remote="h4k3rom" />
-  project path="device/qcom/sepolicy-legacy-um" name="h4k3rom/android_device_qcom_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy-legacy-um" name="h4k3rom/android_device_qcom_sepolicy" remote="h4k3rom" />
 
   <!-- External -->
   <project path="external/tinycompress" name="h4k3rom/android_external_tinycompress" remote="h4k3rom" />
