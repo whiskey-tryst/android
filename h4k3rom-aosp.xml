@@ -46,7 +46,7 @@
   <project path="hardware/interfaces" name="h4k3rom/android_hardware_interfaces" remote="h4k3rom" />
 
   <!-- Vendor -->
-  <project path="vendor/H4K3ROM" name="h4k3rom/android_vendor_H4K3ROM" remote="h4k3rom" />
+  <project path="vendor/h4k3rom" name="h4k3rom/android_vendor_H4K3ROM" remote="h4k3rom" />
   <project path="vendor/qcom/opensource/power" name="h4k3rom/android_vendor_qcom_opensource_power" remote="h4k3rom" />
   <!-- <project path="vendor/support" name="h4k3rom/android_vendor_support" remote="h4k3rom" /> -->
 
