@@ -44,7 +44,7 @@
   <project path="packages/apps/Jelly" name="LineageOS/android_packages_apps_Jelly" remote="lineage" />
   <project path="prebuilts/tools-h4k3rom" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
   <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" remote="lineage" />  
-  <project path="hardware/lineage/interfaces" name="LineageOS/hardware_lineage_interfaces" remote="lineage" />
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" />
   
     <!-- H4K3ROM Apps -->
 
