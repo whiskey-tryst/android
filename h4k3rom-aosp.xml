@@ -34,7 +34,7 @@
   project path="device/qcom/sepolicy-legacy-um" name="h4k3rom/android_device_qcom_sepolicy" remote="h4k3rom" />
 
   <!-- External -->
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="h4k3rom" />
+  <project path="external/tinycompress" name="h4k3rom/android_external_tinycompress" remote="h4k3rom" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="h4k3rom/android_frameworks_av" remote="h4k3rom" />
