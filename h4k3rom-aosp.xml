@@ -17,16 +17,16 @@
     <linkfile src="root.bp" dest="Android.bp" />	
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="packages/apps/Settings" name="h4k3rom/packages_apps_Settings" groups="pdk-fs" remote="h4k3rom" />
-  <project path="packages/apps/Updater" name="h4k3rom/packages_apps_Updater" groups="pdk-fs" remote="h4k3rom" />
-  <project path="packages/providers/DownloadProvider" name="h4k3rom/packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
-  <project path="packages/providers/MediaProvider" name="h4k3rom/packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
-  <project path="packages/services/Telecomm" name="h4k3rom/packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
-  <project path="packages/services/Telephony" name="h4k3rom/packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/apps/Settings" name="h4k3rom/android_packages_apps_Settings" groups="pdk-fs" remote="h4k3rom" />
+  <project path="packages/apps/Updater" name="h4k3rom/android_packages_apps_Updater" groups="pdk-fs" remote="h4k3rom" />
+  <project path="packages/providers/DownloadProvider" name="h4k3rom/android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/providers/MediaProvider" name="h4k3rom/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/services/Telecomm" name="h4k3rom/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/services/Telephony" name="h4k3rom/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
   <project path="system/core" name="h4k3rom/system_core" groups="pdk" remote="h4k3rom" />
   <project path="system/netd" name="h4k3rom/system_netd" groups="pdk" remote="h4k3rom" />
   <project path="system/vold" name="h4k3rom/system_vold" groups="pdk" remote="h4k3rom" />
-  <project path="system/update_engine" name="h4k3rom/system_update_engine" groups="pdk" remote="h4k3rom" />
+  <project path="system/update_engine" name="h4k3rom/android_system_update_engine" groups="pdk" remote="h4k3rom" />
   
   <!-- Device -->
   <project path="device/H4K3ROM/sepolicy" name="android_device_H4K3ROM_sepolicy" remote="h4k3rom" />
