@@ -23,9 +23,9 @@
   <project path="packages/providers/MediaProvider" name="h4k3rom/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
   <project path="packages/services/Telecomm" name="h4k3rom/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
   <project path="packages/services/Telephony" name="h4k3rom/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
-  <project path="system/core" name="h4k3rom/system_core" groups="pdk" remote="h4k3rom" />
-  <project path="system/netd" name="h4k3rom/system_netd" groups="pdk" remote="h4k3rom" />
-  <project path="system/vold" name="h4k3rom/system_vold" groups="pdk" remote="h4k3rom" />
+  <project path="system/core" name="h4k3rom/android_system_core" groups="pdk" remote="h4k3rom" />
+  <project path="system/netd" name="h4k3rom/android_system_netd" groups="pdk" remote="h4k3rom" />
+  <project path="system/vold" name="h4k3rom/android_system_vold" groups="pdk" remote="h4k3rom" />
   <project path="system/update_engine" name="h4k3rom/android_system_update_engine" groups="pdk" remote="h4k3rom" />
   
   <!-- Device -->
