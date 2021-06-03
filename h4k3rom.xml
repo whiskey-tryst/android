@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="h4k3rom"
+           fetch="git://github.com/"
+           revision="refs/heads/lineage-17.0"
+           sync-j="8" />
+
+  <remote  name="lineage"
+           fetch="git://github.com/"
+           review="review.lineageos.org"
+           revision="refs/heads/lineage-17.0"
+           sync-j="8" />
+
+   <remote  name="github"
+           fetch="git://github.com/"
+           sync-c="true"
+           sync-j="8" />
+  
+  <!-- Remove Packages -->
+  <include name="remove.xml" />
+  
+  <!-- Include AOSP repos -->
+  <include name="h4k3rom-aosp.xml" />
+
+  <!-- H3K3R Files -->
+  <project path="android" name="H4K3ROM/android" remote="h4k3rom" />
+
+  <!-- Lineage additions -->
+  <project path="external/bash" name="LineageOS/android_external_bash" remote="lineage" />
+  <project path="external/exfat" name="LineageOS/android_external_exfat" remote="lineage" />
+  <project path="external/htop" name="LineageOS/android_external_htop" remote="lineage" />
+  <project path="external/libncurses" name="LineageOS/android_external_libncurses" remote="lineage" />
+  <project path="external/nano" name="LineageOS/android_external_nano" remote="lineage" />
+  <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="lineage" />
+  <project path="external/openssh" name="LineageOS/android_external_openssh" groups="pdk" remote="lineage" />
+  <project path="external/p7zip" name="LineageOS/android_external_p7zip" remote="lineage" />
+  <project path="external/pigz" name="LineageOS/android_external_pigz" remote="lineage" />
+  <project path="external/rsync" name="LineageOS/android_external_rsync" remote="lineage" />
+  <project path="external/unrar" name="LineageOS/android_external_unrar" remote="lineage" />
+  <project path="external/vim" name="LineageOS/android_external_vim" remote="lineage" />
+  <project path="external/zip" name="LineageOS/android_external_zip" remote="lineage" />
+  <project path="packages/apps/Gallery2" name="LineageOS/android_packages_apps_Gallery2" remote="lineage" />
+  <project path="packages/apps/Jelly" name="LineageOS/android_packages_apps_Jelly" remote="lineage" />
+  <project path="prebuilts/tools-h4k3rom" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="lineage" />
+  <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" remote="lineage" />  
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" />
+  
+    <!-- H4K3ROM Apps -->
+
+<project path="packages/apps/H4K3RWalls" name="H4K3ROM/H4K3RWalls" remote="h4k3rom" />
+<project path="packages/apps/H4K3RWebb" name="H4K3ROM/H4K3RWebb" remote="h4k3rom" />
+
+    <!-- H4K3ROM Bonito Repos -->  
+<project path="device/google/bonito" name="H4K3ROM/android_device_google_bonito" remote="h4k3rom" />  
+<project path="kernel/google/msm-4.9" name="H4K3ROM/android_kernel_google_msm-4.9" remote="h4k3rom" />
+<project path="vendor/google" name="H4K3ROM/proprietary_vendor_google" remote="h4k3rom" />
+
+</manifest>
