@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- H4K3ROM AOSP Repos -->
+  <project path="bionic" name="h4k3rom/android_bionic" groups="pdk" remote="h4k3rom" />	
+  <project path="bootable/recovery" name="h4k3rom/android_bootable_recovery" groups="pdk" remote="h4k3rom" />	
+  <project path="build/make" name="h4k3rom/android_build" groups="pdk" remote="h4k3rom" >	
+    <copyfile src="core/root.mk" dest="Makefile" />	
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />	
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />	
+    <linkfile src="core" dest="build/core" />	
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />	
+    <linkfile src="target" dest="build/target" />	
+    <linkfile src="tools" dest="build/tools" />	
+  </project>	
+  <project path="build/soong" name="h4k3rom/android_build_soong" groups="pdk,tradefed" remote="h4k3rom" >	
+    <linkfile src="root.bp" dest="Android.bp" />	
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="packages/apps/Settings" name="h4k3rom/android_packages_apps_Settings" groups="pdk-fs" remote="h4k3rom" />
+  <project path="packages/apps/Updater" name="h4k3rom/android_packages_apps_Updater" groups="pdk-fs" remote="h4k3rom" />
+  <project path="packages/providers/DownloadProvider" name="h4k3rom/android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/providers/MediaProvider" name="h4k3rom/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/services/Telecomm" name="h4k3rom/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="packages/services/Telephony" name="h4k3rom/android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="h4k3rom" />
+  <project path="system/core" name="h4k3rom/android_system_core" groups="pdk" remote="h4k3rom" />
+  <project path="system/netd" name="h4k3rom/android_system_netd" groups="pdk" remote="h4k3rom" />
+  <project path="system/vold" name="h4k3rom/android_system_vold" groups="pdk" remote="h4k3rom" />
+  <project path="system/update_engine" name="h4k3rom/android_system_update_engine" groups="pdk" remote="h4k3rom" />
+  
+  <!-- Device -->
+  <project path="device/H4K3ROM/sepolicy" name="h4k3rom/android_device_H4K3ROM_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy" name="h4k3rom/android_device_qcom_sepolicy" remote="h4k3rom" />
+  <project path="device/qcom/sepolicy-legacy-um" name="h4k3rom/android_device_qcom_sepolicy" remote="h4k3rom" />
+
+  <!-- External -->
+  <project path="external/tinycompress" name="h4k3rom/android_external_tinycompress" remote="h4k3rom" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="h4k3rom/android_frameworks_av" remote="h4k3rom" />
+  <project path="frameworks/base" name="h4k3rom/android_frameworks_base" remote="h4k3rom" />
+  <project path="frameworks/native" name="h4k3rom/android_frameworks_native" remote="h4k3rom" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="h4k3rom/android_hardware_interfaces" remote="h4k3rom" />
+
+  <!-- Vendor -->
+  <project path="vendor/h4k3rom" name="h4k3rom/android_vendor_H4K3ROM" remote="h4k3rom" />
+  <project path="vendor/qcom/opensource/power" name="h4k3rom/android_vendor_qcom_opensource_power" remote="h4k3rom" />
+  <!-- <project path="vendor/support" name="h4k3rom/android_vendor_support" remote="h4k3rom" /> -->
+
+  <!-- LineageOS AOSP Repos -->
+  <project path="art" name="LineageOS/android_art" groups="pdk" remote="lineage" />
+  <project path="build/blueprint" name="LineageOS/android_build_blueprint" groups="pdk,tradefed" remote="lineage" />
+  <project path="device/generic/goldfish" name="LineageOS/android_device_generic_goldfish" groups="pdk" remote="lineage" />
+  <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" groups="pdk" remote="lineage" />
+  <project path="external/libnfc-nxp" name="LineageOS/android_external_libnfc-nxp" remote="lineage" />
+  <project path="external/mksh" name="LineageOS/android_external_mksh" groups="pdk" remote="lineage" />
+  <project path="external/selinux" name="LineageOS/android_external_selinux" groups="pdk" remote="lineage" />
+  <project path="external/tinyalsa" name="LineageOS/android_external_tinyalsa" groups="pdk" remote="lineage" />
+  <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" groups="pdk" remote="lineage" />
+  <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" groups="pdk" remote="lineage" />
+  <project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" groups="pdk" remote="lineage" />
+  <project path="hardware/broadcom/nfc" name="LineageOS/android_hardware_broadcom_nfc" remote="lineage" />
+  <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" remote="lineage" />
+  <project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" remote="lineage" />
+  <project path="hardware/nxp/nfc" name="LineageOS/android_hardware_nxp_nfc" groups="pdk" remote="lineage" />
+  <project path="hardware/qcom/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/camera" name="LineageOS/android_hardware_qcom_camera" groups="qcom_camera,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="LineageOS/android_hardware_qcom_data_ipacfg-mgr" groups="qcom,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lineage" />
+  <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" groups="qcom,qcom_gps,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/sdm845/display" name="LineageOS/android_hardware_qcom_sdm845_display" groups="qcom_sdm845" remote="lineage" />
+  <project path="hardware/qcom/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lineage" />
+  <project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" remote="lineage" />
+  <project path="packages/apps/Contacts" name="LineageOS/android_packages_apps_Contacts" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/apps/Email" name="LineageOS/android_packages_apps_Email" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/apps/Exchange" name="LineageOS/android_packages_apps_Exchange" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/apps/FMRadio" name="LineageOS/android_packages_apps_FMRadio" remote="lineage" />
+  <project path="packages/apps/Messaging" name="LineageOS/android_packages_apps_Messaging" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/apps/Nfc" name="LineageOS/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/apps/UnifiedEmail" name="LineageOS/android_packages_apps_UnifiedEmail" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/apps/PermissionController" name="LineageOS/android_packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <project path="packages/apps/ExactCalculator" name="LineageOS/android_packages_apps_ExactCalculator" groups="apps_nfc,pdk-fs" remote="lineage" />
+  <project path="packages/providers/ContactsProvider" name="LineageOS/android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <project path="platform_testing" name="LineageOS/android_platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="lineage" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/r8" name="LineageOS/android_prebuilts_r8" groups="pdk" clone-depth="1" remote="lineage" />
+  <project path="system/bpf" name="LineageOS/android_system_bpf" groups="pdk" remote="lineage" />
+  <project path="system/bt" name="LineageOS/android_system_bt" groups="pdk" remote="lineage" />
+  <project path="system/keymaster" name="LineageOS/android_system_keymaster" groups="pdk" remote="lineage" />
+
+</manifest>
